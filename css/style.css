@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.info {
+  padding: 4px 6px;
+  position: stricky;
+}
+
+code {
+  font-weight: 700;
+  color: violet;
+  border-bottom: 2px solid violet;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block {
+  width: 25%;
+  height: 150px;
+  background-color: gold;
+  position: relative;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 8px;
+  border:10px solid #000;
+  overflow:hidden;
+}
+
+.block .child {
+  background-color:violet;
+  display: inline-block;
+  color: #fff;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+}
+
+.block.one .child {
+  position: static;
+}
+
+.block.two .child {
+  position: relative;
+}
+
+.block.three .child {
+  position: absolute;
+}
+.block.four{
+  top: 400px;
+  left:485px;
+  background: violet;
+  position: fixed;
+  z-index:2;
+}
+.five{
+  position: relative;
+  top: 599px;
+  widows: 199px;
+  background:red;
+}
